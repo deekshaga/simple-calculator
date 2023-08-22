@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <style>
+            table,tr,td{
+                border:solid black;
+                width:33%;
+                text-align: center;
+                border-collapse: collapse;
+                background-color:cyan;
+            }
+            table {margin: auto;}
+        </style>
+    </head>
+<body bgcolor="purple">
+<script type="text/javascript">
+    var n=prompt("ENter the value of n");
+    if(isNaN(n))
+    {
+        alert("Enter valid input");
+
+    }
+    else
+    {
+document.write("<table><tr><th colspan='3'>NUMBERS FROM 0 TO 10 WITH THEIR SQUARES AND CUBES </th></tr>");
+document.write( "<tr><td>Number</td><td>Square</td><td>Cube</td><td>fourth root</td></td></tr>" );
+for(var i=0; i<=n; i++)
+{
+document.write( "<tr><td>" + i + "</td><td>" + i*i + "</td><td>" + i*i*i+ "</td><td>" + i*i*i*i+ "</td></tr>" ) ;
+}
+document.write( "</table>" );
+    }
+</script>
+<body>
+</html>
